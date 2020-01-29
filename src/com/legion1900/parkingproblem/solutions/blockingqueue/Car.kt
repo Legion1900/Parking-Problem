@@ -1,13 +1,12 @@
-package com.legion1900.parkingproblem
-
-import java.util.concurrent.TimeUnit
+package com.legion1900.parkingproblem.solutions.blockingqueue
 
 class Car(
     private val name: String = defaultName,
     private val slotUsageTime: Long = SLOT_USAGE_TIME
 ) {
 
-    var state: State = State.ARRIVED
+    var state: State =
+        State.ARRIVED
 
     fun park(slot: Slot) {
         /*

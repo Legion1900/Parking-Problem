@@ -1,4 +1,4 @@
-package com.legion1900.parkingproblem
+package com.legion1900.parkingproblem.solutions.blockingqueue
 
 class Slot(val name: String = defaultName) {
 

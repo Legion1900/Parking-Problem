@@ -1,4 +1,4 @@
-package com.legion1900.parkingproblem
+package com.legion1900.parkingproblem.solutions.blockingqueue
 
 import java.util.concurrent.ArrayBlockingQueue
 import java.util.concurrent.BlockingQueue
@@ -7,7 +7,9 @@ class Parking(slotNum: Int) {
     private val slots: BlockingQueue<Slot>
 
     init {
-        val slotList = mutableListOf<Slot>().apply { for (i in 1..slotNum) add(Slot()) }
+        val slotList = mutableListOf<Slot>().apply { for (i in 1..slotNum) add(
+            Slot()
+        ) }
         slots = ArrayBlockingQueue(10, true, slotList)
     }
 
