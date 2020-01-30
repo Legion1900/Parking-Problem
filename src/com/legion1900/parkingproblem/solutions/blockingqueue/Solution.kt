@@ -18,7 +18,7 @@ class Solution {
             val tasks = Array(carNum) { CarParkTask(cars[it], parking) }
             tasks.forEach { executor.submit(it) }
             executor.shutdown()
-            executor.awaitTermination(1, TimeUnit.HOURS)
+            executor.awaitTermination(2, TimeUnit.MINUTES)
         }
     }
 
